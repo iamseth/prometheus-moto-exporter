@@ -50,10 +50,6 @@ func (info *DownstreamInfo) Parse(row []string) error {
 		return errors.New("invalid data size")
 	}
 
-	//getField := func(i int) string {
-	//	return strings.TrimSpace(row[i])
-	//}
-
 	var err error
 
 	info.ID, err = parseInt64(row[idField])
